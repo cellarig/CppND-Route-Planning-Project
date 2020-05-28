@@ -57,10 +57,10 @@ int main(int argc, const char **argv)
     // RoutePlanner object below in place of 10, 10, 90, 90.
 	float start_x, start_y, end_x, end_y;
 	std::cout << "Input start and end node: \n";
-	std::cout << "start x: "; std::cin >> start_x;
-	std::cout << "start y: "; std::cin >> start_y;
-	std::cout << "end x: "; std::cin >> end_x;
-	std::cout << "end y: "; std::cin >> end_y;
+	std::cout << "start x [0-100]: "; std::cin >> start_x;
+	std::cout << "start y [0-100]: "; std::cin >> start_y;
+	std::cout << "end x   [0-100]: "; std::cin >> end_x;
+	std::cout << "end y   [0-100]: "; std::cin >> end_y;
 
     // Build Model.
     RouteModel model{osm_data};
